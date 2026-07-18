@@ -22,8 +22,8 @@ window.addEventListener("scroll", function () {
 
   for (var i = 0; i < sections.length; i++) {
     if (
-      currentScroll >= sections[i].offsetTop &&
-      currentScroll < sections[i].offsetTop + sections[i].offsetHeight
+       currentScroll >= sections[i].offsetTop - 100 &&
+      currentScroll < sections[i].offsetTop + sections[i].offsetHeight - 100
     ) {
       for (var j = 0; j < links.length; j++) {
         links[j].classList.remove("active");
